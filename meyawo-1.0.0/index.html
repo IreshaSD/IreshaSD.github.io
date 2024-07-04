@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio of Iresha Sandamali - Data Scientist and Machine Learning Engineer.">
+    <meta name="author" content="Iresha Sandamali">
+    <title>Iresha Sandamali Portfolio</title>
+    <!-- Font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap CSS (local) -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom main styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+
+
+    <style>
+        body {
+            font-family: Georgia, serif;
+        }
+
+        .navbar-nav .nav-link {
+            margin-right: 15px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .navbar {
+            z-index: 1000;
+        }
+
+        .header-content {
+            text-align: center;
+            color: #000;
+        }
+
+        .header-content h1 {
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .header-content img {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .header-content p {
+            margin-top: 20px;
+            color: #000;
+            font-size: 1.1rem;
+        }
+
+
+
+        .header-subtitle {
+            font-size: 6rem; /* Adjust this value as needed */
+        }
+
+        .project-card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .project-card-img {
+            width: calc(560px * 1.5);
+            height: calc(315px * 1.5);
+            margin-bottom: 20px;
+        }
+        .certifications-description {
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+        .publication-description {
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+        .experience-card {
+            /*text-align: center;*/
+            text-align: justify;
+            margin: 0 auto;
+            max-width: 840px;
+        }
+
+        .experience-card h5,
+        .experience-card h6,
+        .experience-card p {
+            /*text-align: center;*/
+            text-align: justify;
+            margin: 0 auto;
+            max-width: 840px;
+        }
+
+        .blog-card {
+            text-align: center; /* Centering the blog card within its container */
+            display: inline-block; /* Allowing the blog card to have auto width */
+            width: 100%;
+        }
+
+        .blog-content {
+            width: 840px; /* Container for both image and paragraph */
+            margin: 0 auto; /* Center the container */
+            text-align: center; /* Center the content */
+            position: relative;
+        }
+
+        .blog-card-body {
+
+
+                text-align: justify;
+                padding: 0 0; /* Adjust this value if needed to match the image padding */
+
+            /*text-align: center;*/
+        }
+
+        .about-caption a {
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .navbar .nav-link:active {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            font-size: 24px;
+            color: #000;
+        }
+
+        .section-title,
+        .section-subtitle {
+            text-transform: uppercase;
+        }
+
+        .experience-card {
+            margin-bottom: 20px;
+        }
+
+        .back-to-home {
+            margin-top: 10px;
+        }
+
+        #home {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #home .layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #home .layer1 {
+            background-image: url('assets/imgs/6.jpg');
+            z-index: 1;
+            opacity: 0.8;
+        }
+
+        #home .layer2 {
+            background-image: url('assets/imgs/6.jpg');
+            z-index: 2;
+            opacity: 0.7;
+        }
+
+        #home .layer3 {
+            background-image: url('assets/imgs/6.jpg');
+            z-index: 3;
+            opacity: 0.6;
+        }
+
+        #home .layer4 {
+            background-image: url('assets/imgs/6.jpg');
+            z-index: 4;
+            opacity: 0.5;
+        }
+
+        #home .header-content {
+            position: relative;
+            z-index: 5;
+        }
+
+        .publications-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .publications-buttons a {
+            width: 150px;
+        }
+
+        .blog-card-img {
+
+            width: calc(560px * 1.5);
+            height: calc(315px * 1.5);
+            margin-bottom: 20px;
+            padding-left: 0; /* Adjust this value to align with the text */
+            padding-right: 0; /* Adjust this value to align with the text */
+            /*margin: 0 auto;*/
+            transform: translateX(0%);
+        }
+
+        .blog-card {
+                text-align: center;
+                display: inline-block;
+                width: 100%; /* Ensuring full width for centering */
+            }
+
+        .about-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .about-buttons a {
+            width: 150px;
+        }
+
+        #about .section-title {
+            margin-top: 60px;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        .publications-buttons .btn {
+            margin: 5px;
+        }
+
+        /*.blog-card-img {
+            width: calc(560px * 1.5);
+            height: calc(315px * 1.5);
+            margin: 0 auto 20px auto;
+        }*/
+
+        .blog-card h4 {
+        }
+
+        .blog-card h4,
+        .blog-card p {
+            margin-bottom: 10px;
+        }
+
+
+        .project-card-body .btn-primary {
+            margin: 5px;
+        }
+
+        .project-card h4 {
+        }
+
+        .project-description {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .experience-card h5,
+        .experience-card h6,
+        .experience-card p {
+            /*text-align: center;
+            margin-bottom: 20px;*/
+            text-align: justify;
+            margin: 0 auto;
+            max-width: 840px;
+        }
+
+        .experience-card p {
+            text-align: justify;
+        }
+
+        .section p {
+            text-align: justify;
+        }
+
+        .about-content p {
+            text-align: justify;
+            margin: 0 auto;
+            max-width: 840px;
+        }
+
+        .about-content p {
+            margin-bottom: 10px;
+        }
+
+        .about-content h3 {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+
+        /*.skills-list
+        <!-- { -->
+         /*text-align: left; */
+        /* margin: 0 ; /* Remove default margin */
+         /*padding: 0;   /*display: inline-block;>*/
+         /*margin: 0 auto 20px; /* Added margin-bottom of 20px for separation */
+         /*padding-right: 100px; /* Remove default padding */
+         /*list-style-type: disc;
+         } */
+
+         /*.skills-list li {
+             /*list-style-type: disc; /* Remove default list styles */
+             /*margin-bottom: 5px; /* Adjust margin between list items */
+         /*} -->
+
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="page-top">
+    <!-- Page Navbar -->
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-light bg-light" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand logo" href="#home">Iresha Sandamali</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- Page Header -->
+    <header id="home" class="header">
+        <div class="layer layer1"></div>
+        <div class="layer layer2"></div>
+        <div class="layer layer3"></div>
+        <div class="layer layer4"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="down">Iresha Sandamali</span>
+            </h1>
+            <img src="assets/imgs/Iresha.jpg" alt="hero" class="img-fluid">
+            <p class="header-subtitle">Machine Learning & Data Science Enthusiast | Innovator in AI</p>
+            <a href="#about" class="btn btn-primary mt-4">Visit My Works</a>
+            <div class="social-icons mt-4">
+                <a href="https://github.com/IreshaSD" target="_blank" class="ti-github"></a>
+                <a href="https://www.linkedin.com/in/iresha-sandamali-55580b160/" target="_blank" class="ti-linkedin"></a>
+                <a href="mailto:ireshasandamalidm@gmail.com" class="ti-email"></a>
+            </div>
+        </div>
+    </header><!-- End of Page Header -->
+
+    <!-- About Section -->
+    <section class="section pt-0" id="about">
+        <div class="container text-center">
+            <div class="about">
+                <div class="about-content">
+                    <h2 class="section-title">About Me</h2>
+                    <p style="margin-bottom: 10px;">
+                        Hello! I'm Iresha Sandamali, a passionate and driven professional with a background in Electrical and Electronics Engineering. I graduated with a strong foundation in engineering principles and problem-solving skills. However, my true passion lies in the dynamic fields of Machine Learning (ML), Artificial Intelligence (AI), Deep Learning (DL), and Data Science. My journey during my final year of university, I embarked on a project that solidified my interest in these cutting-edge technologies. My project, "Machine Learning Based Micro Emotion Detection System," was an exciting challenge that allowed me to dive deep into the world of ML and AI. I designed and developed a system capable of detecting subtle human emotions, utilizing machine learning algorithms. This experience not only enhanced my technical skills but also fueled my enthusiasm for exploring the vast possibilities within AI and Data Science.
+                    </p>
+                    <p style="margin-bottom: 10px;">
+                        <strong>Why ML, AI, DL, and Data Science?</strong> The ML, AI, DL, and Data Science fields appeal to me due to their flexibility across industries. From improving healthcare delivery to enhancing business models and developing innovative solutions to real-world problems, this technology is at the forefront of the next technological revolution. I am particularly drawn to the ability to analyze large amounts of data, identify hidden patterns, and make intelligent predictions.
+                    </p>
+                    <p style="margin-bottom: 10px;">
+                        <strong>My Vision:</strong>  As I transition into this exciting career, my goal is to leverage my technical skills and combine them with my growing knowledge of ML, AI, DL, and Data Science to create impactful solutions. I am committed to continuous learning and continuous improvement, staying abreast of the latest developments, and supporting businesses that push the boundaries of what is possible.
+                    </p>
+                    <h4 class="section-subtitle" style="margin-top: 20px;">Education</h4>
+                    <p><strong>Bachelor of Science(Hons)</strong> in Electrical and Electronic Engineering.<br>South Eastern University of Sri Lanka.</p>
+                    <h4 class="section-subtitle" style="margin-top: 20px;">Skills </h4>
+                    <!--<p><strong>Programming (Python,SQL), Machine Learning Algorithms, Deep Learning, Data Visualization,Statistical Analysis</strong></p>*/-->
+                    <p>
+
+                      • Programming (Python, SQL)<br>
+                        • TensorFlow <br>
+                      • Machine Learning Algorithms<br>
+                      • Deep Learning<br>
+                      • Data Visualization<br>
+                      • Statistical Analysis
+
+                    </p>
+                      <!--<strong>*/-->
+
+                        <!--Programming (Python, SQL)<br>
+                        Machine Learning Algorithms<br>
+                        Deep Learning<br>
+                        Data Visualization<br>
+                        Statistical Analysis-->
+                      <!--</strong>-->
+                    <!--</p>-->
+
+                    <!--<ul class="skills-list">
+                        <li>Data Analysis</li>
+                        <li>Predictive Modeling</li>
+                        <li>Machine Learning Algorithms</li>
+                        <li>Deep Learning</li>
+                        <li>Data Visualization</li>
+                        <li>Statistical Analysis</li>
+                        <li>Programming (Python, R, SQL)</li>
+                    </ul> -->
+                    <div class="about-buttons">
+                        <a href="assets/docs/Iresha_Sandamali.pdf" class="btn btn-outline-primary" download>Download CV</a>
+                        <a href="#home" class="btn btn-primary back-to-home mt-2">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End of About Section -->
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+<section class="section" id="projects">
+    <div class="container text-center">
+        <h2 class="section-title">Projects</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="project-card">
+                    <div class="project-card-body">
+                        <h4>1. Machine Learning Based Micro Emotion Detection System</h4>
+                        <img src="assets/imgs/project1.jpg" class="project-card-img" alt="Project 1">
+                        <p class="project-description" style="text-align: justify; margin: 0 auto 5px; max-width: 840px;">
+                            Micro-expressions are brief, involuntary facial expressions that occur within 1/25 to 1/5 of a second, often revealing hidden emotions. This project focuses on the automatic recognition of these micro-expressions using machine learning techniques, which have applications in areas such as criminal interrogations, security, and psychological assessments.<br>
+
+
+                            <br> <strong style="font-size: 1.2em; margin-bottom: 10px; display: inline-block;">Key Features</strong><br>
+                            <span style="line-height: 1;">
+
+                            <!--<br> <strong style="text-align: justify; margin-bottom: 0;"> Key Features:</strong><br>-->
+                                <strong>• Data Collection:</strong> Utilized the CASME II dataset with 247 micro-expressions recorded at 200 fps from 26 subjects.<br>
+                                <strong>• Feature Extraction:</strong> Employed Local Binary Pattern on Three Orthogonal Planes (LBP-TOP) for spatiotemporal feature extraction and analyzed onset, apex, and offset frames for micro-expression phases.<br>
+                                 <strong>• Classification:</strong> Implemented a Support Vector Machine (SVM) for classification, achieving moderate accuracy(65.38%) by combining temporal and static features.<br>
+                                 <strong>• GUI Implementation:</strong> Developed a Python-based graphical user interface (GUI) using Tkinter for interactive visualization and parameter tuning. The GUI allows users to input parameters, select videos, and display results, enhancing user experience and model performance evaluation.<br>
+                            </span>
+                        </p>
+
+
+                        <video controls class="project-video" style="margin-top: 20px;">
+                            <source src="assets/video/ME2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="project-description" style="text-align: justify; margin: 0 auto 5px; max-width: 840px;">
+                           A graphical user interface (GUI) was developed to visualize and find better correlations between the generated feature vectors and the different micro emotion classes. This interface made it easier to adjust various parameters and visualize the results to identify changes effectively. Finally, the classification results for a given video are displayed within the GUI, providing a clear and intuitive way to understand the system's performance.<br>
+
+                            <br>In the above video, the GUI screen demonstrates how the Local Binary Patterns (LBP) features and LBP-Three Orthogonal Planes (LBP-TOP) features of the frames varied throughout the video. LBP is a simple yet powerful texture descriptor that works by thresholding the neighborhood of each pixel and considering the result as a binary number. LBP-TOP extends this concept to three orthogonal planes, capturing the spatiotemporal patterns in a sequence of frames. The video illustrates how these features are extracted from each frame and visualized in real-time on the GUI, highlighting the dynamic nature of micro-expressions. This visualization helps in understanding the subtle variations in facial expressions over time and their corresponding feature representations.
+                        </p>
+                        <video controls class="project-video" style="margin-top: 20px;">
+                            <source src="assets/video/ME1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="project-description" style="text-align: justify; margin: 0 auto 5px; max-width: 840px;">
+                            This video consists of the GUI visualization of the micro-emotions in a particular video by analyzing it frame by frame. The system processes each frame, extracting relevant features and classifying them into different micro-emotion categories. The GUI displays the results of this analysis, showing the detected micro-emotion for each frame along with confidence scores. This detailed, frame-by-frame analysis allows for precise identification of transient emotional states, providing valuable insights into the nuances of human emotions. The visualization also includes graphical representations of the classification results, making it easier to interpret the data and understand the performance of the micro-emotion detection system.
+                        </p>
+                        <a href="https://github.com/IreshaSD/ML-Based-Micro-Emotion-Detection-System/tree/main" class="btn btn-primary mt-2">Check out the code</a>
+                        <a href="#home" class="btn btn-primary back-to-home mt-2">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 starts here -->
+            <div class="col-md-12">
+                <div class="project-card">
+                    <div class="project-card-body">
+                        <h4 style="margin-bottom: 10px;">2. Multiple Disease Prediction Web Application </h4>
+                        <img src="assets/imgs/project2.png" class="project-card-img" alt="Project 2" style="margin-bottom: 10px;">
+                        <p class="project-description" style="text-align: justify; margin: 0 auto 0; max-width: 840px;">
+                           This web application is designed to predict the likelihood of multiple diseases, including diabetes, heart disease, Parkinson's disease, and breast cancer, using machine learning. Each disease prediction utilizes a separate model trained on specific datasets, ensuring accurate and reliable results based on user-inputted health parameters.<br>
+
+                            <br> <strong style="font-size: 1.2em; margin-bottom: 10px; display: inline-block;">01. Key Features</strong><br>
+                            <span style="line-height: 1;">
+                                <strong>• Multiple Disease Prediction: </strong> Predicts diabetes, heart disease, Parkinson's disease, and breast cancer using distinct machine learning models for each disease.<br>
+                                <strong>• Advanced Algorithms: </strong> Implements logistic regression, support vector machine (SVM), and other classification algorithms tailored for disease prediction.<br>
+                                <strong>• User-Friendly Interface: </strong> Features an intuitive web interface for users to input health parameters and receive disease predictions.<br>
+                                <strong>• Data Preprocessing:  </strong> Utilizes techniques like feature scaling to enhance the performance of the models.<br>
+                            </span>
+
+                            <br><strong style="font-size: 1.2em;  margin-bottom: 10px; display: inline-block;">02. Application Overview</strong><br>
+                            <span style="line-height: 1;">
+                                <strong>• Input Health Parameters: </strong> Users can input their health data through the web interface.<br>
+                                <strong>• Obtain Predictions: </strong> The application uses trained models to predict the likelihood of each disease based on the input data.<br>
+                                <strong>• View Results:  </strong> Users receive predictions indicating whether they are likely to have each particular disease.<br>
+                                <strong>• Model Evaluation:   </strong> The models have been evaluated using standard metrics to ensure their effectiveness in predicting disease outcomes.<br>
+                                <strong>• Health Assistance:  </strong> The application aims to assist individuals in assessing their disease risk, promoting early detection, and encouraging preventive measures.<br>
+                            </span>
+
+                            <br><strong style="font-size: 1.2em;  margin-bottom: 10px; display: inline-block;">03. Model Details and Performance</strong><br>
+                            <span style="line-height: 1;">
+                                <strong>    1.  Diabetes Prediction Model </strong> <br>
+                                This model predicts the likelihood of diabetes using various health indicators and employs a Support Vector Machine (SVM) with a linear kernel.<br>
+                                   <br> <strong>    • Key Features: </strong> <br>
+                                    <strong>    • Algorithm:  </strong> SVM with a linear kernel.<br>
+                                    <strong>    • Input Features:   </strong>  Health metrics such as glucose levels,  number of times pregnant, blood pressure, skin thickness, insulin, Diabetes Pedigree Function,age, and BMI.<br>
+                                    <strong>    • Data Preprocessing: </strong> StandardScaler for feature scaling.<br>
+                                    <strong>    • Performance: </strong> Training accuracy of 78.66% and testing accuracy of 77.27%.<br>
+
+                                <br> <strong>    2.  Heart Disease Prediction Model    </strong> <br>
+                                This model predicts the likelihood of heart disease using logistic regression based on various health parameters.<br>
+                                   <br> <strong>    • Key Features: </strong> <br>
+                                    <strong>    • Algorithm:  </strong> Logistic regression.<br>
+                                    <strong>    • Input Features:   </strong>  age, sex, chest pain type , cholesterol levels, resting blood pressure, serum cholestoral in mg/dl, fasting blood sugar > 120 mg/dl, resting electrocardiographic results (values 0,1,2), maximum heart rate achieved, exercise induced angina, oldpeak = ST depression induced by exercise relative to rest, the slope of the peak exercise ST segment, number of major vessels (0-3) colored by flourosopy, thal: 0 = normal; 1 = fixed defect; 2 = reversable defect.<br>
+                                    <strong>    • Data Preprocessing: </strong> StandardScaler for feature scaling.<br>
+                                    <strong>    • Performance: </strong> Training accuracy of 84.71% and testing accuracy of 78.68%.<br>
+
+                                <br> <strong>    3.  Parkinson's Disease Prediction Model   </strong> <br>
+                                This model predicts the presence of Parkinson's disease using voice-related features and employs an SVM classifier with a linear kernel.<br>
+                                   <br> <strong>    • Key Features: </strong> <br>
+                                    <strong>    • Algorithm:  </strong> SVM with a linear kernel.<br>
+                                    <strong>    • Input Features:   </strong> Average vocal fundamental frequency,  maximum vocal fundamental frequency, minimum vocal fundamental frequency, acoustic measures from voice recordings, such as jitter and shimmer, Two measures of the ratio of noise to tonal components in the voice, Two nonlinear dynamical complexity measures, DFA - Signal fractal scaling exponent and spread1,spread2,PPE - Three nonlinear measures of fundamental frequency variation. <br>
+                                    <strong>    • Data Preprocessing: </strong> StandardScaler for feature scaling.<br>
+                                    <strong>    • Performance: </strong> Training accuracy of 88.41% and testing accuracy of 87.17%.<br>
+
+                                <br> <strong>    4.  Breast Cancer Prediction Model  </strong> <br>
+                                This model predicts breast cancer diagnosis using logistic regression based on features extracted from biopsy samples.<br>
+                                   <br> <strong>    • Key Features: </strong> <br>
+                                    <strong>    • Algorithm:  </strong> Logistic regression.<br>
+                                    <strong>    • Input Features:   </strong>   Attributes from biopsy samples, such as mean radius of lobes, mean of surface texture, outer perimeter of lobes, mean area of lobes, mean of smoothness level, mean of compactness, mean of concavity, mean of cocave points  .<br>
+                                    <strong>    • Data Preprocessing: </strong> StandardScaler for feature scaling.<br>
+                                    <strong>    • Performance: </strong> Training accuracy of 98.90% and testing accuracy of 97.36%.<br>
+                            </span>
+                        </p>
+                        <video controls class="project-video" style="margin-top: 20px;">
+                            <source src="assets/video/MD.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="project-description" style="text-align: justify; margin: 0 auto 5px; max-width: 840px;">
+
+                            This video provides a comprehensive visual guide on using the Multiple Disease Prediction Web Application. It demonstrates how to access the platform, input relevant health data for diabetes, heart disease, Parkinson's disease, and breast cancer models, and obtain predictions. Each step is clearly shown, from entering parameters like glucose levels and cholesterol to voice features and biopsy attributes. Users must enter all values one by one, pressing Enter after each entry, and finally press the Diabetes Test Result button for diabetes prediction, the Heart Test Result button for heart disease prediction, the Parkinson Test Result button for Parkinson's disease prediction, and the Breast Cancer Prediction Test Result button for breast cancer prediction. If any value is missing, an error message "Please enter all the values before proceeding" is displayed. Upon entering all values and pressing the respective test result button, the screen will display whether the individual has or is suffering from that particular disease.
+                        </p>
+                        <!--<a href="https://github.com/IreshaSD/ML-Based-Micro-Emotion-Detection-System/tree/main" class="btn btn-primary mt-2" style="margin-bottom: 20px;">Check out the code</a>-->
+                        <!--<a href="#home" class="btn btn-primary back-to-home mt-2" style="margin-bottom: 20px;">Back to Home</a>-->
+                        <a href="https://github.com/IreshaSD/Multiple-Disease-Prediction-WebApp" class="btn btn-primary mt-2" >Check out the code</a>
+                        <a href="https://multiple-disease-prediction-webapp-rqyxzanjv224vrem9bnrs8.streamlit.app/" class="btn btn-primary mt-2">Access the Web Version</a>
+                        <a href="#home" class="btn btn-primary back-to-home mt-2" >Back to Home</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 starts here -->
+            <div class="col-md-12">
+                <div class="project-card">
+                    <div class="project-card-body">
+                        <h4>3. Gemini Chatbot</h4>
+                        <h4 >(A Streamlit App Powered-by-Google-s-Generative-AI)</h4>
+
+
+                        <img src="assets/imgs/project3.png" class="project-card-img" alt="Project 3">
+                        <p class="project-description" style="text-align: justify; margin: 0 auto 5px; max-width: 840px;">
+                            This project implements a chatbot application using Streamlit and Google's Generative AI (GenAI) service. The chatbot leverages the powerful gemini-pro model for text generation, enabling interactive conversations.<br>
+
+                            <br> <strong style="font-size: 1.2em; margin-bottom: 10px; display: inline-block;">01. Key Features</strong><br>
+                            <span style="line-height: 1;">
+                                <strong>• Chat Interface: </strong>  Engage in interactive conversations with the gemini-pro model through Streamlit's intuitive chat interface.<br>
+                                <strong>• Image Captioning: </strong> Generate captions for uploaded images using the gemini-pro-vision model, extracting visual insights.<br>
+                                <strong>• Text Embedding:  </strong>  Obtain numerical representations (embeddings) for input text, aiding in tasks like document similarity search.<br>
+                                <strong>• Open-Ended Question Answering:  </strong> Pose questions to the gemini-pro model and receive comprehensive responses, fostering knowledge exploration.<br>
+
+
+                           <br> <strong style="font-size: 1.2em; margin-bottom: 0; display: inline-block;">02. Functionality and Usage   </strong> <br>
+
+                               <br> <strong> 1.  How It Works </strong> <br>
+                                <strong>    • Error Handling:   </strong> Robust error messages ensure a smooth user experience.<br>
+                                <strong>    • Multiple Responses:  </strong>  Navigate multiple responses for more dynamic interaction using 'Next' and 'Previous' buttons.<br>
+                                <strong>    • Image Captioning: </strong> Provides short and detailed titles for uploaded images through a visual interface.<br>
+                                <strong>    • Chat Interface: </strong> Engage with the chatbot for various queries.<br>
+                                <strong>    • Text Embedding: </strong> Input text to receive embeddings, enhancing text analysis capabilities.<br>
+                                <strong>    • Open-Ended Questioning and Answering:  </strong> Ask any question and get insightful responses.<br>
+
+                                <br> <strong> 2.  Usage </strong> <br>
+                                <strong>    • Input Health Parameters:  </strong>  Users can input their health data through the web interface.<br>
+                                <strong>    • Obtain Predictions:  </strong>  The application uses trained models to predict the likelihood of each disease based on the input data.<br>
+                                <strong>    • View Results: </strong> Users receive predictions indicating whether they are likely to have each particular disease.<br>
+                                <strong>    • Error Handling: </strong> If any value is missing, an error message "Please enter all the values before proceeding" is displayed. If all values are entered, the screen will display whether the individual has or is suffering from that particular disease.<br>
+
+                                <br>This project highlights the integration of Google's Generative AI to enhance chatbot capabilities and the use of Streamlit to create a user-friendly interface. It also showcases advanced image handling with the Pillow library, robust error handling, and dynamic interaction through multiple response navigation.<br>
+                            </span>
+                        </p>
+                        <video controls class="project-video" style="margin-top: 20px;">
+                            <source src="assets/video/CB_2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="project-description" style="text-align: justify; margin: 0 auto 5px; max-width: 840px;">
+                            This video demonstrates the key features and functionalities of the Gemini Chatbot - A Streamlit App Powered by Google's Generative AI. The video provides a visual walkthrough of how the chatbot application operates, showcasing each option in the navigation bar. Viewers will see how to engage with the chat interface, generate image captions, obtain text embeddings, and perform open-ended question answering. The intuitive interface guides users through entering queries and receiving dynamic responses, highlighting the advanced capabilities of the gemini-pro model. Despite the absence of verbal explanations, all features and interactions are clearly illustrated, ensuring an easy-to-follow experience.
+                        </p>
+                        <a href="https://github.com/IreshaSD/Gemini-Chatbot---A-Streamlit-App-Powered-by-Google-s-Generative-AI" class="btn btn-primary mt-2">Check out the code</a>
+                         <a href="https://gemini-chatbot-generative-ai.streamlit.app/" class="btn btn-primary mt-2">Access the Web Version</a>
+                        <a href="#home" class="btn btn-primary back-to-home mt-2">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- Project 4 starts here -->
+             <!--
+            <div class="col-md-12">
+                <div class="project-card">
+                    <div class="project-card-body">
+                        <h4>Project 4</h4>
+                        <img src="assets/imgs/skin.jpg" class="project-card-img" alt="Project 4">
+                        <p class="project-description" style="text-align: justify; margin: 0 auto 5px; max-width: 840px;">
+                            This is a brief description of Project 4. It highlights the main features and objectives of the project. The description should be concise and informative.
+                        </p>
+                        <video controls class="project-video" style="margin-top: 20px;">
+                            <source src="assets/video/3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="project-description" style="text-align: justify; margin: 0 auto 5px; max-width: 840px;">
+                            This is a brief description of Project 4. It highlights the main features and objectives of the project. The description should be concise and informative.
+                        </p>
+                        -->
+                        <!--<a href="https://github.com/IreshaSD/Project4" class="btn btn-primary mt-2" style="margin-top: 0;">Check out the code</a>-->
+                        <!--<a href="#home" class="btn btn-primary back-to-home mt-2" style="margin-bottom: 0;">Back to Home</a>-->
+                   <!--
+                    </div>
+                    <a href="https://github.com/IreshaSD/Project4" class="btn btn-primary mt-2" style="margin-top: 0;">Check out the code</a>
+                </div>
+                -->
+                <!--<a href="https://github.com/IreshaSD/Project4" class="btn btn-primary mt-2" style="margin-top: 0;">Check out the code</a>-->
+           <!--
+            </div>
+        </div>
+        <a href="#home" class="btn btn-primary back-to-home mt-2" style="margin-top: 0;">Back to Home</a>
+    </div>
+</section>-->  <!-- End of Projects Section -->
+
+    <!-- Experiences Section -->
+<section class="section" id="experiences">
+    <div class="container text-center">
+        <h2 class="section-title" style="margin-top: 0;">Experiences</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <!-- Experience 1 -->
+                <div class="experience-card" style="margin-bottom: 20px; display: flex; align-items: flex-start;">
+                    <img src="assets/imgs/fiverr.jpg" alt="Fiverr Logo" class="img-fluid experience-logo" style="width: 100px; height: 100px; object-fit: contain; margin-right: 10px;">
+                    <div style="text-align: left;">
+                        <p class="font-weight-bold" style="margin-bottom: 5px;">Machine Learning/Deep Learning/Data Science Enthusiast</p>
+                        <p style="margin-top: 0;margin-bottom: 5px;">Freelance Projects via Fiverr (for a Fiverr Freelancer)</p>
+                        <p>January 2022 - Present</p>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="experience-card" style="margin-bottom: 20px; display: flex; align-items: flex-start;">
+                    <img src="assets/imgs/hus.png" alt="Company 2 Logo" class="img-fluid experience-logo" style="width: 100px; height: 100px; object-fit: contain; margin-right: 10px;">
+                    <div style="text-align: left;">
+                        <p class="font-weight-bold" style="margin-bottom: 5px;">Electrical Design Engineer</p>
+                        <p style="margin-top: 0; margin-bottom: 5px;"> Husmah Engineering Pvt Ltd</p>
+                        <p>2023 September - 2024 March</p>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="experience-card" style="margin-bottom: 20px; display: flex; align-items: flex-start;">
+                    <img src="assets/imgs/SEUSL.jpg" alt="Company 3 Logo" class="img-fluid experience-logo" style="width: 100px; height: 100px; object-fit: contain; margin-right: 10px;">
+                    <div style="text-align: left;">
+                        <p class="font-weight-bold" style="margin-bottom: 5px;">Temporary Demonstrator at Electrical and Telecommunication Engineering Department</p>
+                        <p style="margin-top: 0; margin-bottom: 5px;">South Eastern University of Sri Lanka</p>
+                        <p> January 2022 - August 2023</p>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="experience-card" style="margin-bottom: 20px; display: flex; align-items: flex-start;">
+                    <img src="assets/imgs/cebl.jpg" alt="Company 4 Logo" class="img-fluid experience-logo" style="width: 100px; height: 100px; object-fit: contain; margin-right: 10px;">
+                    <div style="text-align: left;">
+                        <p class="font-weight-bold" style="margin-bottom: 5px;">Trainee Electrical Engineer</p>
+                        <p style="margin-top: 0; margin-bottom: 5px;">Ceylon Electricity Board </p>
+                        <p> August 2021 - November 2021</p>
+                    </div>
+                </div>
+
+                <!-- Experience 5 -->
+                <div class="experience-card" style="margin-bottom: 20px; display: flex; align-items: flex-start;">
+                    <img src="assets/imgs/sltl.jpg" alt="Company 5 Logo" class="img-fluid experience-logo" style="width: 100px; height: 100px; object-fit: contain; margin-right: 10px;">
+                    <div style="text-align: left;">
+                        <p class="font-weight-bold" style="margin-bottom: 5px;">Trainee Electronic Engineer</p>
+                        <p style="margin-top: 0; margin-bottom: 5px;">Sri Lanka Telecom PLC</p>
+                        <p> March 2019 - May 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#home" class="btn btn-primary back-to-home">Back to Home</a>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Certifications Section -->
+    <section class="section" id="certifications">
+        <div class="container text-center">
+            <h5 class="section-title">Certifications</h5>
+            <h5 class="section-subtitle">Professional Certifications</h5>
+            <p class="certifications-description " style="text-align: justify; margin: 0 auto 20px; max-width: 840px;">
+                  1.    Google Certified: Foundations of Data Science <br>
+                  2.    IBM Certified: IBM Machine Learning Professional <br>
+                  3.    Microsoft Certified: Data Analysis and Visualization with Power BI<br>
+                  4.    IBM Certified: Data Science Professional
+            </p>
+            <!--<p>[Description of your professional certifications]</p>*/-->
+            <h5 class="section-subtitle">Membership Certifications</h5>
+            <p class="certifications-description " style="text-align: justify; margin: 0 auto 20px; max-width: 840px;">
+                1.  Associate Member (AM-29255) of Institute of Engineers Sri Lanka (IESL) (2022- present)<br>
+                2.  Associate Member - Engineering Council, Sri Lanka (ECSL) (2022 - present)
+            </p>
+            <a href="#home" class="btn btn-primary back-to-home">Back to Home</a>
+        </div>
+    </section><!-- End of Certifications Section -->
+
+    <!-- Publications Section -->
+    <section class="section" id="publications">
+        <div class="container text-center">
+            <h2 class="section-title">Publications</h2>
+            <!--<p>[Description of your publications]</p>-->
+            <p class="publication-description " style="text-align: justify; margin: 0 auto 20px; max-width: 840px;">
+                <strong>•   Title:</strong>  Machine Learning Based Micro Emotion Detection System<br>
+                <strong>•   Conference:</strong> YMS Conference, IESL <br>
+                <strong>•   Year: </strong>2021 <br>
+                <strong>•   Status:</strong> Abstract Accepted, Full Paper Rejected <br>
+                 <br>This paper presents the development of a machine learning model aimed at detecting micro-emotions using advanced feature extraction techniques such as LBP and LBP-TOP. Despite achieving an accuracy of 65.38%, the full paper was rejected, reflecting the ongoing challenges and learning experiences in the field of micro-emotion detection. <br>
+
+            </p>
+
+            <div class="publications-buttons">
+                <a href="assets/docs/your-publication.pdf" class="btn btn-outline-primary" download>Download PDF</a>
+                <a href="#home" class="btn btn-primary back-to-home">Back to Home</a>
+            </div>
+        </div>
+    </section><!-- End of Publications Section -->
+
+<!-- Blog Section -->
+<section class="section" id="blog">
+    <div class="container text-center">
+        <h2 class="section-title">Blogs</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="blog-card">
+                    <h4>Bridging the Gap Between Machine Learning Models and Human</h4>
+                    <h4> Understanding </h4>
+                    <div class="blog-content">
+                        <img src="assets/imgs/blog.png" class="blog-card-img" alt="Blog 1">
+                        <p class="blog-card-body">
+                            <br> <strong style="font-size: 1.2em; margin-bottom: 10px; display: inline-block;"> Introduction</strong><br>
+                            <span style="line-height: 1;">
+                            As a Machine Learning and Data Science enthusiast, one of the most intriguing and essential areas of study is Explainable AI (XAI). While building sophisticated models that achieve high accuracy is a critical goal, it's equally important to understand and trust the decisions made by these models. This is where XAI comes into play, providing transparency, accountability, and insight into the inner workings of AI systems. In this blog, we'll explore what XAI is, why it's important, and how it can be implemented in practical applications.<br>
+                            </span>
+
+                            <br> <strong style="font-size: 1.2em; margin-bottom: 10px; display: inline-block;"> Understanding Explainable AI</strong><br>
+                            <span style="line-height: 1;">
+                            Explainable AI refers to methods and techniques in applying AI such that human experts can understand the results of the solution.  It is different from the ‘black box’ model where the working of the model is not explained. The primary objective of XAI is to increase the interpretability and understandability of AI systems without degrading their effectiveness.<br>
+                            </span>
+
+                            <br> <strong style="font-size: 1.2em; margin-bottom: 10px; display: inline-block;">Importance of Explainable AI</strong><br>
+                            <span style="line-height: 1;">
+                                <strong>1.  Trust and Transparency: </strong> Since AI systems are being applied in more sensitive areas such as healthcare, finance and self-driving cars, it is crucial that stakeholders have confidence in the systems. XAI plays a role in the creation of this trust by explaining how decisions are made.<br>
+                                <strong>2.  Compliance and Ethics: </strong> With regulations like GDPR and the AI Ethics guidelines, organizations must ensure that their AI systems are fair and unbiased. XAI helps in auditing and verifying that the AI models comply with these regulations.<br>
+                                <strong>3.  Debugging and Improving Models: </strong> Knowing the decision-making process enables the data scientists to detect and correct errors or bias in the models. This iterative improvement process is crucial for developing robust AI systems.<br>
+                            </span>
+
+                            <br> <strong style="font-size: 1.2em; margin-bottom: 10px; display: inline-block;">Techniques for Explainable AI</strong><br>
+                            <span style="line-height: 1;">
+                                <strong>1.  Feature Importance:  </strong> Methods like LIME (Local Interpretable Model-agnostic Explanations) and SHAP (SHapley Additive exPlanations) assist in determining which features are more critical for the model’s predictions.<br>
+                                <strong>2.  Visualization: </strong> Dimensionality reduction techniques such as t-SNE and PCA can be employed to plot the data in two or three dimensions to get a better understanding of how the data points are distributed and classified by the model.<br>
+                                <strong>3.  Rule-based Methods: </strong> Decision trees and rule-based classifiers are easy to understand as they show how decisions are made based on the input features.<br>
+                                <strong>4.  Model-Agnostic Methods: </strong> These methods can be applied to any machine learning model to analyze their behavior even without the knowledge of the model architecture. LIME and SHAP are examples of model-agnostic methods.<br>
+                            </span>
+
+                            <br> <strong style="font-size: 1.2em; margin-bottom: 10px; display: inline-block;">Practical Applications of Explainable AI</strong><br>
+                            <span style="line-height: 1;">
+                                <strong>1.  Healthcare: </strong> For medical diagnostics, it is essential to know why an AI model predicts a specific disease. XAI can assist doctors in comprehending the factors that have led to the diagnosis, thus improving the patient’s results.<br>
+                                <strong>2.  Finance: </strong>For credit scoring and fraud detection, it is essential to have transparent decision making. XAI makes sure that customers are informed as to why they were approved or rejected credit and assists in identifying fraud.<br>
+                                <strong>3.  Autonomous Systems: </strong> In self-driving cars, explainability is useful in relating and verifying the steps taken by the AI system to avoid any risks and guarantee efficiency.<br>
+                            </span>
+
+                            <br> <strong style="font-size: 1.2em; margin-bottom: 10px; display: inline-block;">Challenges and Future Directions</strong><br>
+                            <span style="line-height: 1;">
+                                 Despite the numerous advantages of XAI, there are also some disadvantages that are associated with it. This is because the trade-off between interpretability and accuracy is always hard to find. In addition, there are often varying degrees of explanation needed depending on the stakeholder, which increases the difficulty.<br>
+                                 The future of XAI is to create better and more advanced tools to meet the requirements of different users. There is current work to develop models that are inherently interpretable, and not at the cost of the models’ performance, to make AI more reliable.<br>
+                            </span>
+
+                            <br> <strong style="font-size: 1.2em; margin-bottom: 10px; display: inline-block;">Conclusion</strong><br>
+                            <span style="line-height: 1;">
+                                 The explainability of the results and processes is one of the most important aspects of the contemporary machine learning and data science. Besides, it creates trust and transparency, maintains ethical compliance, and helps to enhance the model. It is therefore clear that as we advance the use of AI systems in different fields the need for XAI will be even more significant. Thus, by adopting XAI, it is possible to develop AI systems that are not only effective but also explainable and reliable.<br>
+
+                            </span>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other blog cards -->
+        </div>
+        <a href="#home" class="btn btn-primary back-to-home">Back to Home</a>
+    </div>
+</section><!-- End of Blog Section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 Iresha Sandamali.<!--All Rights Reserved.--></p>
+        </div>
+    </footer><!-- End of Footer -->
+
+    <!-- Scripts -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
