@@ -13,7 +13,9 @@
     <!-- Custom main styles -->
     <link rel="stylesheet" href="assets/css/main.css">
     <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
-
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Font Awesome CSS (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <style>
         body {
@@ -75,7 +77,7 @@
             width: 100%;
             max-width: 840px;
             height: auto;
-            margin-bottom: 20px;     
+            margin-bottom: 20px;    
         }
 
             .project-video {
@@ -85,7 +87,7 @@
             margin-bottom: 20px;
         }
 
-        
+       
         .certifications-description {
             margin-bottom: 25px;
             text-align: justify;
@@ -126,7 +128,7 @@
                 margin: 0 auto;
                 text-align: center;
                 position: relative;
-            
+           
         }
 
             .blog-card-img {
@@ -136,12 +138,12 @@
                 display: block;
                 margin: 0 auto 20px auto; /* Center align with margin */
         }
-    
+   
            .blog-card-body {
                 text-align: justify;
                 padding: 0;
         }
-    
+   
             @media (max-width: 768px) {
               .blog-content {
                     padding-left: 15px;
@@ -303,7 +305,7 @@
         }*/
 
 
-        
+       
         .blog-card h4,
         .blog-card p {
             margin-bottom: 10px;
@@ -395,8 +397,30 @@
              /*list-style-type: disc; /* Remove default list styles */
              /*margin-bottom: 5px; /* Adjust margin between list items */
          /*} -->
+.scroll-to-top {
+            position: fixed;
+            bottom: 40px; /* Adjust bottom distance as needed */
+            right: 0px; /* Adjust right distance as needed */
+            width: 60px; /* Adjust width as needed */
+            height: 100px; /* Adjust height as needed */
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+            font-size: 24px; /* Adjust icon size as needed */
+            text-decoration: none; /* Remove default anchor underline */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+        }
 
-
+        .scroll-to-top:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+            transform: scale(1.1); /* Slightly increase size on hover */
+        }
     </style>
 </head>
 
@@ -824,17 +848,19 @@
         </div>
     </section><!-- End of Publications Section -->
 
-<!-- Blog Section -->
+
+
 <section class="section" id="blog">
     <div class="container text-center">
         <h2 class="section-title">Blogs</h2>
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="blog-card">
-                    <h4>Bridging the Gap Between Machine Learning Models and Human</h4>
-                    <h4> Understanding </h4>
+                    <h4>Bridging the Gap Between Machine Learning Models and Human Understanding</h4>
                     <div class="blog-content">
-                        <img src="assets/imgs/blog.png" class="blog-card-img" alt="Blog 1">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/imgs/blog.png" class="img-fluid" alt="Blog 1">
+                        </div>
                         <p class="blog-card-body">
                             <br> <strong style="font-size: 1.2em; margin-bottom: 10px; display: inline-block;"> Introduction</strong><br>
                             <span style="line-height: 1;">
@@ -888,8 +914,12 @@
         </div>
         <a href="#home" class="btn btn-primary back-to-home">Back to Home</a>
     </div>
-</section><!-- End of Blog Section -->
+</section>
+<!-- End of Blog Section -->
 
+
+
+   
     <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
@@ -897,14 +927,51 @@
         </div>
     </footer><!-- End of Footer -->
 
+
+    <!-- Scroll to Top Icon -->
+    <a href="#" class="scroll-to-top" id="scroll-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+
     <!-- Scripts -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
     <script src="assets/js/main.js"></script>
+<!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ <!-- Custom JavaScript -->
+    <script>
+        // Scroll to top functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            var scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+            function handleScroll() {
+                // Show button regardless of scroll position
+                scrollToTopBtn.style.display = 'block';
+            }
+
+            document.addEventListener('scroll', handleScroll);
+
+            // Scroll to top on click
+            scrollToTopBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>
+
 
 
 
