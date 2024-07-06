@@ -13,8 +13,8 @@
     <!-- Custom main styles -->
     <link rel="stylesheet" href="assets/css/main.css">
     <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<!-- Font Awesome CSS (for icons) -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- Font Awesome CSS (for icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <style>
@@ -77,7 +77,7 @@
             width: 100%;
             max-width: 840px;
             height: auto;
-            margin-bottom: 20px;    
+            margin-bottom: 20px;     
         }
 
             .project-video {
@@ -87,7 +87,7 @@
             margin-bottom: 20px;
         }
 
-       
+        
         .certifications-description {
             margin-bottom: 25px;
             text-align: justify;
@@ -128,7 +128,7 @@
                 margin: 0 auto;
                 text-align: center;
                 position: relative;
-           
+            
         }
 
             .blog-card-img {
@@ -138,12 +138,12 @@
                 display: block;
                 margin: 0 auto 20px auto; /* Center align with margin */
         }
-   
+    
            .blog-card-body {
                 text-align: justify;
                 padding: 0;
         }
-   
+    
             @media (max-width: 768px) {
               .blog-content {
                     padding-left: 15px;
@@ -254,7 +254,22 @@
             width: 150px;
         }
 
+       /* .blog-card-img {
 
+            width: calc(560px * 1.5);
+            height: calc(315px * 1.5);
+            margin-bottom: 20px;
+            padding-left: 0; /* Adjust this value to align with the text */
+            padding-right: 0; /* Adjust this value to align with the text */
+            /*margin: 0 auto;*/
+            /*transform: translateX(0%);
+        }
+
+        .blog-card {
+                text-align: center;
+                display: inline-block;
+                width: 100%; /* Ensuring full width for centering */
+            }*/
 
         .about-buttons {
             display: flex;
@@ -279,7 +294,18 @@
         .publications-buttons .btn {
             margin: 5px;
         }
-       
+
+        /*.blog-card-img {
+            width: calc(560px * 1.5);
+            height: calc(315px * 1.5);
+            margin: 0 auto 20px auto;
+        }*/
+
+       /* .blog-card h4 {
+        }*/
+
+
+        
         .blog-card h4,
         .blog-card p {
             margin-bottom: 10px;
@@ -306,6 +332,10 @@
             text-align: justify;
             margin: 0 auto;
             max-width: 840px;
+        }
+
+        /*.experience-card p {
+            text-align: justify;*/
         }
 
         .section p {
@@ -354,34 +384,6 @@
         }
 
 
-.scroll-to-top {
-            position: fixed;
-            bottom: 40px; /* Adjust bottom distance as needed */
-            right: 40px; /* Adjust right distance as needed */
-            width: 60px; /* Adjust width as needed */
-            height: 100px; /* Adjust height as needed */
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            z-index: 1000;
-            font-size: 50px; /* Adjust icon size as needed */
-            text-decoration: none; /* Remove default anchor underline */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
-            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-        }
-
-        .scroll-to-top:hover {
-            background-color: #0056b3; /* Darker shade on hover */
-            transform: scale(1.1); /* Slightly increase size on hover */
-        }
-
-        .scroll-to-top.visible {
-        display: flex; /* Show button when visible */
-       }
     </style>
 </head>
 
@@ -456,14 +458,12 @@
                       • Deep Learning<br>
                       • Data Visualization<br>
                       • Statistical Analysis
-                        
+
+                    </p>
+
                     <div class="about-buttons">
                         <a href="assets/docs/Iresha_Sandamali.pdf" class="btn btn-outline-primary" download>Download CV</a>
-                        <!-- Scroll to Top Button -->
-                        <a href="#home" class="scroll-to-top" id="scroll-to-top-btn">
-                            <i class="fas fa-arrow-up"></i>
-                        </a>
-
+                        <a href="#home" class="btn btn-primary back-to-home mt-2">Back to Home</a>
                     </div>
                 </div>
             </div>
@@ -550,7 +550,7 @@
                             <span style="line-height: 1;">
                                 <strong>    1.  Diabetes Prediction Model </strong> <br>
                                 This model predicts the likelihood of diabetes using various health indicators and employs a Support Vector Machine (SVM) with a linear kernel.<br>
-                                   <br> <strong>  Key Features: </strong> <br>
+                                   <br> <strong>    • Key Features: </strong> <br>
                                     <strong>    • Algorithm:  </strong> SVM with a linear kernel.<br>
                                     <strong>    • Input Features:   </strong>  Health metrics such as glucose levels,  number of times pregnant, blood pressure, skin thickness, insulin, Diabetes Pedigree Function,age, and BMI.<br>
                                     <strong>    • Data Preprocessing: </strong> StandardScaler for feature scaling.<br>
@@ -558,7 +558,7 @@
 
                                 <br> <strong>    2.  Heart Disease Prediction Model    </strong> <br>
                                 This model predicts the likelihood of heart disease using logistic regression based on various health parameters.<br>
-                                   <br> <strong> Key Features: </strong> <br>
+                                   <br> <strong>    • Key Features: </strong> <br>
                                     <strong>    • Algorithm:  </strong> Logistic regression.<br>
                                     <strong>    • Input Features:   </strong>  age, sex, chest pain type , cholesterol levels, resting blood pressure, serum cholestoral in mg/dl, fasting blood sugar > 120 mg/dl, resting electrocardiographic results (values 0,1,2), maximum heart rate achieved, exercise induced angina, oldpeak = ST depression induced by exercise relative to rest, the slope of the peak exercise ST segment, number of major vessels (0-3) colored by flourosopy, thal: 0 = normal; 1 = fixed defect; 2 = reversable defect.<br>
                                     <strong>    • Data Preprocessing: </strong> StandardScaler for feature scaling.<br>
@@ -566,7 +566,7 @@
 
                                 <br> <strong>    3.  Parkinson's Disease Prediction Model   </strong> <br>
                                 This model predicts the presence of Parkinson's disease using voice-related features and employs an SVM classifier with a linear kernel.<br>
-                                   <br> <strong> Key Features: </strong> <br>
+                                   <br> <strong>    • Key Features: </strong> <br>
                                     <strong>    • Algorithm:  </strong> SVM with a linear kernel.<br>
                                     <strong>    • Input Features:   </strong> Average vocal fundamental frequency,  maximum vocal fundamental frequency, minimum vocal fundamental frequency, acoustic measures from voice recordings, such as jitter and shimmer, Two measures of the ratio of noise to tonal components in the voice, Two nonlinear dynamical complexity measures, DFA - Signal fractal scaling exponent and spread1,spread2,PPE - Three nonlinear measures of fundamental frequency variation. <br>
                                     <strong>    • Data Preprocessing: </strong> StandardScaler for feature scaling.<br>
@@ -574,7 +574,7 @@
 
                                 <br> <strong>    4.  Breast Cancer Prediction Model  </strong> <br>
                                 This model predicts breast cancer diagnosis using logistic regression based on features extracted from biopsy samples.<br>
-                                   <br> <strong> Key Features: </strong> <br>
+                                   <br> <strong>    • Key Features: </strong> <br>
                                     <strong>    • Algorithm:  </strong> Logistic regression.<br>
                                     <strong>    • Input Features:   </strong>   Attributes from biopsy samples, such as mean radius of lobes, mean of surface texture, outer perimeter of lobes, mean area of lobes, mean of smoothness level, mean of compactness, mean of concavity, mean of cocave points  .<br>
                                     <strong>    • Data Preprocessing: </strong> StandardScaler for feature scaling.<br>
@@ -801,8 +801,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="blog-card">
-                    <h4>Bridging the Gap Between Machine Learning Models and Human </h4>
-                    <h4>Understanding</h4>
+                    <h4>Bridging the Gap Between Machine Learning Models and Human Understanding</h4>
                     <div class="blog-content">
                         <div class="d-flex justify-content-center">
                             <img src="assets/imgs/blog.png" class="img-fluid" alt="Blog 1">
@@ -872,56 +871,30 @@
             <p>&copy; 2024 Iresha Sandamali.<!--All Rights Reserved.--></p>
         </div>
     </footer><!-- End of Footer -->
-
-
+	
+	
     <!-- Scroll to Top Icon -->
     <a href="#" class="scroll-to-top" id="scroll-to-top-btn">
         <i class="fas fa-arrow-up"></i>
     </a>
 
-
+	
     <!-- Scripts -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
     <script src="assets/js/main.js"></script>
-<!-- Bootstrap JS and dependencies (optional) -->
+	<!-- Bootstrap JS and dependencies (optional) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	  <!-- Custom JavaScript -->
 
- <!-- Custom JavaScript -->
-    <script>
-        
-        document.addEventListener("DOMContentLoaded", function() {
-            // Get the scroll-to-top element
-            const scrollToTopBtn = document.querySelector(".scroll-to-top");
-    
-            // Check the scroll position and show/hide the button
-            window.addEventListener("scroll", function() {
-                if (window.scrollY > 200) {
-                    scrollToTopBtn.classList.add("visible");
-                } else {
-                    scrollToTopBtn.classList.remove("visible");
-                }
-            });
-    
-            // Scroll to the #home section smoothly when the button is clicked
-            scrollToTopBtn.addEventListener("click", function(e) {
-                e.preventDefault();
-                document.querySelector("#home").scrollIntoView({
-                    behavior: "smooth"
-                });
-            });
-        });
-
-
-    </script>
 
 </body>
 
 </html>
-
 
 
 
