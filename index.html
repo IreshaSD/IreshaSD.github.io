@@ -117,41 +117,39 @@
         }
 
         .blog-content {
-            /*width: 840px; /* Container for both image and paragraph */
-            /*margin: 0 auto; /* Center the container */
-            /*text-align: center; /* Center the content */
-            /*position: relative;*/
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: center;
                 width: 100%;
                 max-width: 840px;
                 margin: 0 auto;
-                text-align: center;
-                position: relative;
+                text-align: justify;
             
         }
 
             .blog-card-img {
-                width: 100%;
-                max-width: 100%;
-                height: auto;
-                display: block;
-                margin: 0 auto 20px auto; /* Center align with margin */
+                    max-width: 40%;
+                    margin: 0 20px 20px 0; /* Margin on the right and bottom */
+                    object-fit: cover;
         }
     
            .blog-card-body {
-                text-align: justify;
+                max-width: 60%;
                 padding: 0;
         }
     
             @media (max-width: 768px) {
               .blog-content {
-                    padding-left: 15px;
-                    padding-right: 15px;
+                flex-direction: column;
+                align-items: center;
             }
         }
 
+        .blog-card-img,
         .blog-card-body {
-            text-align: justify;
-            padding: 0 ; /* Adjust this value if needed to match the image padding */
+            max-width: 100%;
+            margin: 0 0 20px 0;
 
             /*text-align: center;*/
         }
@@ -831,8 +829,8 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="blog-card">
-                    <h4>Bridging the Gap Between Machine Learning Models and Human</h4>
-                    <h4> Understanding </h4>
+                    <h4>Bridging the Gap Between Machine Learning Models and Human Understanding</h4>
+                    
                     <div class="blog-content">
                         <img src="assets/imgs/blog.png" class="blog-card-img" alt="Blog 1">
                         <p class="blog-card-body">
