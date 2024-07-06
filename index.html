@@ -121,12 +121,32 @@
             /*margin: 0 auto; /* Center the container */
             /*text-align: center; /* Center the content */
             /*position: relative;*/
-            width: 100%;
-            max-width: 840px;
-            margin: 0 auto;
-            text-align: center;
-            position: relative;
+                width: 100%;
+                max-width: 840px;
+                margin: 0 auto;
+                text-align: center;
+                position: relative;
             
+        }
+
+            .blog-card-img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto 20px auto; /* Center align with margin */
+        }
+    
+           .blog-card-body {
+                text-align: justify;
+                padding: 0;
+        }
+    
+            @media (max-width: 768px) {
+              .blog-content {
+                    padding-left: 15px;
+                    padding-right: 15px;
+            }
         }
 
         .blog-card-body {
@@ -814,7 +834,7 @@
                     <h4>Bridging the Gap Between Machine Learning Models and Human</h4>
                     <h4> Understanding </h4>
                     <div class="blog-content">
-                        <img src="assets/imgs/blog.png" class="project-card-img" alt="Blog 1">
+                        <img src="assets/imgs/blog.png" class="blog-card-img" alt="Blog 1">
                         <p class="blog-card-body">
                             <br> <strong style="font-size: 1.2em; margin-bottom: 10px; display: inline-block;"> Introduction</strong><br>
                             <span style="line-height: 1;">
