@@ -254,22 +254,7 @@
             width: 150px;
         }
 
-       /* .blog-card-img {
 
-            width: calc(560px * 1.5);
-            height: calc(315px * 1.5);
-            margin-bottom: 20px;
-            padding-left: 0; /* Adjust this value to align with the text */
-            padding-right: 0; /* Adjust this value to align with the text */
-            /*margin: 0 auto;*/
-            /*transform: translateX(0%);
-        }
-
-        .blog-card {
-                text-align: center;
-                display: inline-block;
-                width: 100%; /* Ensuring full width for centering */
-            }*/
 
         .about-buttons {
             display: flex;
@@ -294,17 +279,6 @@
         .publications-buttons .btn {
             margin: 5px;
         }
-
-        /*.blog-card-img {
-            width: calc(560px * 1.5);
-            height: calc(315px * 1.5);
-            margin: 0 auto 20px auto;
-        }*/
-
-       /* .blog-card h4 {
-        }*/
-
-
        
         .blog-card h4,
         .blog-card p {
@@ -332,10 +306,6 @@
             text-align: justify;
             margin: 0 auto;
             max-width: 840px;
-        }
-
-        /*.experience-card p {
-            text-align: justify;*/
         }
 
         .section p {
@@ -383,24 +353,11 @@
             }
         }
 
-        /*.skills-list
-        <!-- { -->
-         /*text-align: left; */
-        /* margin: 0 ; /* Remove default margin */
-         /*padding: 0;   /*display: inline-block;>*/
-         /*margin: 0 auto 20px; /* Added margin-bottom of 20px for separation */
-         /*padding-right: 100px; /* Remove default padding */
-         /*list-style-type: disc;
-         } */
 
-         /*.skills-list li {
-             /*list-style-type: disc; /* Remove default list styles */
-             /*margin-bottom: 5px; /* Adjust margin between list items */
-         /*} -->
 .scroll-to-top {
             position: fixed;
             bottom: 40px; /* Adjust bottom distance as needed */
-            right: 0px; /* Adjust right distance as needed */
+            right: 40px; /* Adjust right distance as needed */
             width: 60px; /* Adjust width as needed */
             height: 100px; /* Adjust height as needed */
             background-color: #007bff;
@@ -411,7 +368,7 @@
             align-items: center;
             cursor: pointer;
             z-index: 1000;
-            font-size: 24px; /* Adjust icon size as needed */
+            font-size: 50px; /* Adjust icon size as needed */
             text-decoration: none; /* Remove default anchor underline */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
             transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
@@ -421,6 +378,10 @@
             background-color: #0056b3; /* Darker shade on hover */
             transform: scale(1.1); /* Slightly increase size on hover */
         }
+
+        .scroll-to-top.visible {
+        display: flex; /* Show button when visible */
+       }
     </style>
 </head>
 
@@ -495,30 +456,14 @@
                       • Deep Learning<br>
                       • Data Visualization<br>
                       • Statistical Analysis
-
-                    </p>
-                      <!--<strong>*/-->
-
-                        <!--Programming (Python, SQL)<br>
-                        Machine Learning Algorithms<br>
-                        Deep Learning<br>
-                        Data Visualization<br>
-                        Statistical Analysis-->
-                      <!--</strong>-->
-                    <!--</p>-->
-
-                    <!--<ul class="skills-list">
-                        <li>Data Analysis</li>
-                        <li>Predictive Modeling</li>
-                        <li>Machine Learning Algorithms</li>
-                        <li>Deep Learning</li>
-                        <li>Data Visualization</li>
-                        <li>Statistical Analysis</li>
-                        <li>Programming (Python, R, SQL)</li>
-                    </ul> -->
+                        
                     <div class="about-buttons">
                         <a href="assets/docs/Iresha_Sandamali.pdf" class="btn btn-outline-primary" download>Download CV</a>
-                        <a href="#home" class="btn btn-primary back-to-home mt-2">Back to Home</a>
+                        <!-- Scroll to Top Button -->
+                        <a href="#home" class="scroll-to-top" id="scroll-to-top-btn">
+                            <i class="fas fa-arrow-up"></i>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -947,26 +892,30 @@
 
  <!-- Custom JavaScript -->
     <script>
-        // Scroll to top functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            var scrollToTopBtn = document.querySelector('.scroll-to-top');
-
-            function handleScroll() {
-                // Show button regardless of scroll position
-                scrollToTopBtn.style.display = 'block';
-            }
-
-            document.addEventListener('scroll', handleScroll);
-
-            // Scroll to top on click
-            scrollToTopBtn.addEventListener('click', function(e) {
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the scroll-to-top element
+            const scrollToTopBtn = document.querySelector(".scroll-to-top");
+    
+            // Check the scroll position and show/hide the button
+            window.addEventListener("scroll", function() {
+                if (window.scrollY > 200) {
+                    scrollToTopBtn.classList.add("visible");
+                } else {
+                    scrollToTopBtn.classList.remove("visible");
+                }
+            });
+    
+            // Scroll to the #home section smoothly when the button is clicked
+            scrollToTopBtn.addEventListener("click", function(e) {
                 e.preventDefault();
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
+                document.querySelector("#home").scrollIntoView({
+                    behavior: "smooth"
                 });
             });
         });
+
+
     </script>
 
 </body>
