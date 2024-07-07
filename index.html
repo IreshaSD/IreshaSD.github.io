@@ -77,7 +77,7 @@
             width: 100%;
             max-width: 840px;
             height: auto;
-            margin-bottom: 20px;     
+            margin-bottom: 20px;
         }
 
             .project-video {
@@ -87,7 +87,7 @@
             margin-bottom: 20px;
         }
 
-        
+
         .certifications-description {
             margin-bottom: 25px;
             text-align: justify;
@@ -128,22 +128,22 @@
                 margin: 0 auto;
                 text-align: center;
                 position: relative;
-            
+
         }
 
-            .blog-card-img {
+        /*    .blog-card-img {
                 width: 100%;
                 max-width: 100%;
                 height: auto;
                 display: block;
-                margin: 0 auto 20px auto; /* Center align with margin */
-        }
-    
+                margin: 0 auto 20px auto; /* Center align with margin
+        }*/
+
            .blog-card-body {
                 text-align: justify;
                 padding: 0;
         }
-    
+
             @media (max-width: 768px) {
               .blog-content {
                     padding-left: 15px;
@@ -193,9 +193,7 @@
             margin-bottom: 20px;
         }
 
-        .back-to-home {
-            margin-top: 10px;
-        }
+
 
         #home {
             position: relative;
@@ -254,22 +252,7 @@
             width: 150px;
         }
 
-       /* .blog-card-img {
 
-            width: calc(560px * 1.5);
-            height: calc(315px * 1.5);
-            margin-bottom: 20px;
-            padding-left: 0; /* Adjust this value to align with the text */
-            padding-right: 0; /* Adjust this value to align with the text */
-            /*margin: 0 auto;*/
-            /*transform: translateX(0%);
-        }
-
-        .blog-card {
-                text-align: center;
-                display: inline-block;
-                width: 100%; /* Ensuring full width for centering */
-            }*/
 
         .about-buttons {
             display: flex;
@@ -305,7 +288,7 @@
         }*/
 
 
-        
+
         .blog-card h4,
         .blog-card p {
             margin-bottom: 10px;
@@ -334,9 +317,7 @@
             max-width: 840px;
         }
 
-        /*.experience-card p {
-            text-align: justify;*/
-        }
+
 
         .section p {
             text-align: justify;
@@ -383,14 +364,31 @@
             }
         }
 
-	.scroll-to-top {
-	    width: 80px; /* Adjust width as needed */
-	    height: 80px; /* Adjust height as needed */
-	}
-	
-	.scroll-to-top i {
-	    font-size: 32px; /* Adjust icon size as needed */
-	}
+    .scroll-to-top-container {
+        display: flex;
+        justify-content: center; /* Center the button horizontally */
+        margin-top: 20px; /* Adjust margin as needed */
+    }
+
+    .scroll-to-top {
+        width: 60px; /* Adjust width as needed */
+        height: 60px; /* Adjust height as needed */
+        background-color: #007bff; /* Black background */
+        color: white; /* White color for the arrow */
+        border-radius: 50%; /* Make it a circle */
+        display: flex; /* Center the icon horizontally and vertically */
+        align-items: center; /* Center the icon vertically */
+        justify-content: center; /* Center the icon horizontally */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        text-decoration: none; /* Remove underline from link */
+    }
+
+    .scroll-to-top i {
+        font-size: 24px; /* Adjust icon size as needed */
+        color: white; /* Ensure the arrow is white */
+    }
+
+
 
 
 
@@ -472,13 +470,17 @@
                     </p>
 
                     <div class="about-buttons">
-			
-                        <a href="assets/docs/Iresha_Sandamali.pdf" class="btn btn-primary mt-2" download>Download CV</a>
-                        <a href="#home" class="scroll-to-top" id="scroll-to-top-btn">
-			        <i class="fas fa-arrow-up"></i>
-			</a>
+
+                        <a href="https://drive.google.com/file/d/1uJ2LGHb_WlALUzeH8hi-D51rmqvMxqQy/view?usp=sharing" class="btn btn-primary mt-2" download>Download CV</a>
+
+
                     </div>
                 </div>
+            </div>
+            <div class="scroll-to-top-container">
+                    <a href="#home" class="scroll-to-top" id="scroll-to-top-btn">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
             </div>
         </div>
     </section><!-- End of About Section -->
@@ -487,7 +489,7 @@
     <!-- Projects Section -->
 <section class="section" id="projects">
     <div class="container text-center">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title" style="margin-top: 0;">Projects</h2>
         <div class="row">
             <div class="col-md-12">
                 <div class="project-card">
@@ -528,8 +530,13 @@
                             This video consists of the GUI visualization of the micro-emotions in a particular video by analyzing it frame by frame. The system processes each frame, extracting relevant features and classifying them into different micro-emotion categories. The GUI displays the results of this analysis, showing the detected micro-emotion for each frame along with confidence scores. This detailed, frame-by-frame analysis allows for precise identification of transient emotional states, providing valuable insights into the nuances of human emotions. The visualization also includes graphical representations of the classification results, making it easier to interpret the data and understand the performance of the micro-emotion detection system.
                         </p>
                         <a href="https://github.com/IreshaSD/ML-Based-Micro-Emotion-Detection-System/tree/main" class="btn btn-primary mt-2">Check out the code</a>
-                        <a href="#home" class="btn btn-primary back-to-home mt-2">Back to Home</a>
+                        <div class="scroll-to-top-container">
+                                <a href="#home" class="scroll-to-top" id="scroll-to-top-btn">
+                                    <i class="fas fa-arrow-up"></i>
+                                </a>
+                        </div>
                     </div>
+                </div>
                 </div>
             </div>
 
@@ -537,7 +544,7 @@
             <div class="col-md-12">
                 <div class="project-card">
                     <div class="project-card-body">
-                        <h4 style="margin-bottom: 10px;">2. Multiple Disease Prediction Web Application </h4>
+                        <h4 style="margin-bottom: 10px; margin-top: 40px;">2. Multiple Disease Prediction Web Application </h4>
                         <img src="assets/imgs/project2.png" class="project-card-img" alt="Project 2" style="margin-bottom: 10px;">
                         <p class="project-description" style="text-align: justify; margin: 0 auto 0; max-width: 840px;">
                            This web application is designed to predict the likelihood of multiple diseases, including diabetes, heart disease, Parkinson's disease, and breast cancer, using machine learning. Each disease prediction utilizes a separate model trained on specific datasets, ensuring accurate and reliable results based on user-inputted health parameters.<br>
@@ -602,20 +609,25 @@
 
                             This video provides a comprehensive visual guide on using the Multiple Disease Prediction Web Application. It demonstrates how to access the platform, input relevant health data for diabetes, heart disease, Parkinson's disease, and breast cancer models, and obtain predictions. Each step is clearly shown, from entering parameters like glucose levels and cholesterol to voice features and biopsy attributes. Users must enter all values one by one, pressing Enter after each entry, and finally press the Diabetes Test Result button for diabetes prediction, the Heart Test Result button for heart disease prediction, the Parkinson Test Result button for Parkinson's disease prediction, and the Breast Cancer Prediction Test Result button for breast cancer prediction. If any value is missing, an error message "Please enter all the values before proceeding" is displayed. Upon entering all values and pressing the respective test result button, the screen will display whether the individual has or is suffering from that particular disease.
                         </p>
-                        <!--<a href="https://github.com/IreshaSD/ML-Based-Micro-Emotion-Detection-System/tree/main" class="btn btn-primary mt-2" style="margin-bottom: 20px;">Check out the code</a>-->
-                        <!--<a href="#home" class="btn btn-primary back-to-home mt-2" style="margin-bottom: 20px;">Back to Home</a>-->
+
                         <a href="https://github.com/IreshaSD/Multiple-Disease-Prediction-WebApp" class="btn btn-primary mt-2" >Check out the code</a>
                         <a href="https://multiple-disease-prediction-webapp-rqyxzanjv224vrem9bnrs8.streamlit.app/" class="btn btn-primary mt-2">Access the Web Version</a>
-                        <a href="#home" class="btn btn-primary back-to-home mt-2" >Back to Home</a>
+                        <div class="scroll-to-top-container">
+                                <a href="#home" class="scroll-to-top" id="scroll-to-top-btn">
+                                    <i class="fas fa-arrow-up"></i>
+                                </a>
+                        </div>
                     </div>
                 </div>
+
             </div>
+
 
             <!-- Project 3 starts here -->
             <div class="col-md-12">
                 <div class="project-card">
                     <div class="project-card-body">
-                        <h4>3. Gemini Chatbot</h4>
+                        <h4 style=" margin-top: 40px">3. Gemini Chatbot</h4>
                         <h4 >(A Streamlit App Powered-by-Google-s-Generative-AI)</h4>
 
 
@@ -659,12 +671,17 @@
                         </p>
                         <a href="https://github.com/IreshaSD/Gemini-Chatbot---A-Streamlit-App-Powered-by-Google-s-Generative-AI" class="btn btn-primary mt-2">Check out the code</a>
                          <a href="https://gemini-chatbot-generative-ai.streamlit.app/" class="btn btn-primary mt-2">Access the Web Version</a>
-                        <a href="#home" class="btn btn-primary back-to-home mt-2">Back to Home</a>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="scroll-to-top-container">
+                    <a href="#home" class="scroll-to-top" id="scroll-to-top-btn">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+        </div>
+
 </section>
             <!-- Project 4 starts here -->
              <!--
@@ -756,7 +773,11 @@
                 </div>
             </div>
         </div>
-        <a href="#home" class="btn btn-primary back-to-home">Back to Home</a>
+        <div class="scroll-to-top-container">
+                <a href="#home" class="scroll-to-top" id="scroll-to-top-btn">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+        </div>
     </div>
 </section>
 
@@ -767,7 +788,7 @@
     <!-- Certifications Section -->
     <section class="section" id="certifications">
         <div class="container text-center">
-            <h5 class="section-title">Certifications</h5>
+            <h5 class="section-title" style="margin-top: 0;">Certifications</h5>
             <h5 class="section-subtitle">Professional Certifications</h5>
             <p class="certifications-description " style="text-align: justify; margin: 0 auto 20px; max-width: 840px;">
                   1.    Google Certified: Foundations of Data Science <br>
@@ -781,14 +802,18 @@
                 1.  Associate Member (AM-29255) of Institute of Engineers Sri Lanka (IESL) (2022- present)<br>
                 2.  Associate Member - Engineering Council, Sri Lanka (ECSL) (2022 - present)
             </p>
-            <a href="#home" class="btn btn-primary back-to-home">Back to Home</a>
+            <div class="scroll-to-top-container">
+                    <a href="#home" class="scroll-to-top" id="scroll-to-top-btn">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+            </div>
         </div>
     </section><!-- End of Certifications Section -->
 
     <!-- Publications Section -->
     <section class="section" id="publications">
         <div class="container text-center">
-            <h2 class="section-title">Publications</h2>
+            <h2 class="section-title" style="margin-top: 0;">Publications</h2>
             <!--<p>[Description of your publications]</p>-->
             <p class="publication-description " style="text-align: justify; margin: 0 auto 20px; max-width: 840px;">
                 <strong>•   Title:</strong>  Machine Learning Based Micro Emotion Detection System<br>
@@ -800,9 +825,15 @@
             </p>
 
             <div class="publications-buttons">
-                <a href="assets/docs/your-publication.pdf" class="btn btn-outline-primary" download>Download PDF</a>
-                <a href="#home" class="btn btn-primary back-to-home">Back to Home</a>
+                <a href="assets/docs/your-publication.pdf" class="btn btn-primary mt-2" style="margin-bottom: 20px;" download>Download PDF</a>
+
             </div>
+            <div class="scroll-to-top-container">
+                    <a href="#home" class="scroll-to-top" id="scroll-to-top-btn">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+            </div>
+
         </div>
     </section><!-- End of Publications Section -->
 
@@ -810,11 +841,12 @@
 
 <section class="section" id="blog">
     <div class="container text-center">
-        <h2 class="section-title">Blogs</h2>
+        <h2 class="section-title" style="margin-top: 0;">Blogs</h2>
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="blog-card">
-                    <h4>Bridging the Gap Between Machine Learning Models and Human Understanding</h4>
+                    <h4>Bridging the Gap Between Machine Learning Models and Human </h4>
+                    <h4>Understanding</h4>
                     <div class="blog-content">
                         <div class="d-flex justify-content-center">
                             <img src="assets/imgs/blog.png" class="img-fluid" alt="Blog 1">
@@ -848,7 +880,7 @@
                             <br> <strong style="font-size: 1.2em; margin-bottom: 10px; display: inline-block;">Practical Applications of Explainable AI</strong><br>
                             <span style="line-height: 1;">
                                 <strong>1.  Healthcare: </strong> For medical diagnostics, it is essential to know why an AI model predicts a specific disease. XAI can assist doctors in comprehending the factors that have led to the diagnosis, thus improving the patient’s results.<br>
-                                <strong>2.  Finance: </strong>For credit scoring and fraud detection, it is essential to have transparent decision making. XAI makes sure that customers are informed as to why they were approved or rejected credit and assists in identifying fraud.<br>
+                                <strong>2.  Finance: </strong>For credit scoring and fraud detection, it is essential to have transparent decision-making. XAI makes sure that customers are informed as to why they were approved or rejected credit and assists in identifying fraud.<br>
                                 <strong>3.  Autonomous Systems: </strong> In self-driving cars, explainability is useful in relating and verifying the steps taken by the AI system to avoid any risks and guarantee efficiency.<br>
                             </span>
 
@@ -870,28 +902,29 @@
             </div>
             <!-- Repeat for other blog cards -->
         </div>
-        <a href="#home" class="btn btn-primary back-to-home">Back to Home</a>
+                        <div class="scroll-to-top-container">
+                                <a href="#home" class="scroll-to-top" id="scroll-to-top-btn">
+                                    <i class="fas fa-arrow-up"></i>
+                                </a>
+                        </div>
     </div>
 </section>
 <!-- End of Blog Section -->
 
 
 
-   
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
             <p>&copy; 2024 Iresha Sandamali.<!--All Rights Reserved.--></p>
         </div>
     </footer><!-- End of Footer -->
-	
-	
-    <!--<!-- Scroll to Top Icon -->
-    <!--<a href="#" class="scroll-to-top" id="scroll-to-top-btn">
-        <i class="fas fa-arrow-up"></i>
-    </a>-->
 
-	
+
+
+
+
     <!-- Scripts -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -901,7 +934,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	
+
 	  <!-- Custom JavaScript -->
 
 
