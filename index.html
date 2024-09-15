@@ -506,10 +506,14 @@
                             <span style="line-height: 1;">
 
                             <!--<br> <strong style="text-align: justify; margin-bottom: 0;"> Key Features:</strong><br>-->
-                                 <strong>• Data Collection:</strong> Utilized the CASME II dataset with 247 micro-expressions recorded at 200 fps from 26 subjects.<br>
-                                 <strong>• Feature Extraction:</strong> Employed Local Binary Pattern on Three Orthogonal Planes (LBP-TOP) for spatiotemporal feature extraction and analyzed onset, apex, and offset frames for micro-expression phases.<br>
-                                 <strong>• Classification:</strong> Implemented a Support Vector Machine (SVM) for classification, achieving moderate accuracy(65.38%) by combining temporal and static features.<br>
-                                 <strong>• GUI Implementation:</strong> Developed a Python-based graphical user interface (GUI) using Tkinter for interactive visualization and parameter tuning. The GUI allows users to input parameters, select videos, and display results, enhancing user experience and model performance evaluation.<br>
+                                 <strong>• Data Collection:</strong><br>
+				    Utilized the CASME II dataset with 247 micro-expressions recorded at 200 fps from 26 subjects.<br>
+                                 <strong>• Feature Extraction:</strong> <br>
+				    Employed Local Binary Pattern on Three Orthogonal Planes (LBP-TOP) for spatiotemporal feature extraction and analyzed onset, apex, and offset frames for micro-expression phases.<br>
+                                 <strong>• Classification:</strong><br>
+				    Implemented a Support Vector Machine (SVM) for classification, achieving moderate accuracy(65.38%) by combining temporal and static features.<br>
+                                 <strong>• GUI Implementation:</strong><br>
+				    Developed a Python-based graphical user interface (GUI) using Tkinter for interactive visualization and parameter tuning. The GUI allows users to input parameters, select videos, and display results, enhancing user experience and model performance evaluation.<br>
                             </span>
                         </p>
 
@@ -565,26 +569,35 @@
 
                             <br><strong style="font-size: 1.2em;  margin-bottom: 10px; display: inline-block;">02. Application Overview</strong><br>
                             <span style="line-height: 1;">
-                               <strong>• Input Health Parameters:</strong>Users can input their health data through the web interface.<br>
-                                <strong>• Obtain Predictions:</strong>The application uses trained models to predict the likelihood of each disease based on the input data.<br>
-                                <strong>• View Results:</strong>Users receive predictions indicating whether they are likely to have each particular disease.<br>
-                                <strong>• Model Evaluation:</strong>The models have been evaluated using standard metrics to ensure their effectiveness in predicting disease outcomes.<br>
-                                <strong>• Health Assistance:</strong>The application aims to assist individuals in assessing their disease risk, promoting early detection, and encouraging preventive measures.<br>
+                               <strong>• Input Health Parameters:</strong><br>
+				    Users can input their health data through the web interface.<br>
+                                <strong>• Obtain Predictions:</strong><br>
+				    The application uses trained models to predict the likelihood of each disease based on the input data.<br>
+                                <strong>• View Results:</strong><br>
+				    Users receive predictions indicating whether they are likely to have each particular disease.<br>
+                                <strong>• Model Evaluation:</strong><br>
+				    The models have been evaluated using standard metrics to ensure their effectiveness in predicting disease outcomes.<br>
+                                <strong>• Health Assistance:</strong><br>
+				    The application aims to assist individuals in assessing their disease risk, promoting early detection, and encouraging preventive measures.<br>
                             </span>
 
                             <br><strong style="font-size: 1.2em;  margin-bottom: 10px; display: inline-block;">03. Model Details and Performance</strong><br>
                             <span style="line-height: 1;">
                                 <strong>    1.  Diabetes Prediction Model </strong> <br>
                                 This model predicts the likelihood of diabetes using various health indicators and employs a Support Vector Machine (SVM) with a linear kernel.<br>
-                                   <br> <strong>    • Key Features: </strong> <br>
-                                    <strong>    • Algorithm:  </strong> SVM with a linear kernel.<br>
-                                    <strong>    • Input Features:   </strong>  Health metrics such as glucose levels,  number of times pregnant, blood pressure, skin thickness, insulin, Diabetes Pedigree Function,age, and BMI.<br>
-                                    <strong>    • Data Preprocessing: </strong> StandardScaler for feature scaling.<br>
-                                    <strong>    • Performance: </strong> Training accuracy of 78.66% and testing accuracy of 77.27%.<br>
+                                   <br> <strong>• Key Features: </strong> <br>
+                                    <strong>    • Algorithm:  </strong><br>
+				    SVM with a linear kernel.<br>
+                                    <strong>    • Input Features:   </strong> <br>
+				    Health metrics such as glucose levels,  number of times pregnant, blood pressure, skin thickness, insulin, Diabetes Pedigree Function,age, and BMI.<br>
+                                    <strong>    • Data Preprocessing: </strong><br>
+				    StandardScaler for feature scaling.<br>
+                                    <strong>    • Performance: </strong><br>
+				    Training accuracy of 78.66% and testing accuracy of 77.27%.<br>
 
                                 <br> <strong>    2.  Heart Disease Prediction Model    </strong> <br>
                                 This model predicts the likelihood of heart disease using logistic regression based on various health parameters.<br>
-                                   <br> <strong>    • Key Features: </strong> <br>
+                                   <br> <strong>• Key Features: </strong> <br>
                                     <strong>    • Algorithm:  </strong> Logistic regression.<br>
                                     <strong>    • Input Features:   </strong>  age, sex, chest pain type , cholesterol levels, resting blood pressure, serum cholestoral in mg/dl, fasting blood sugar > 120 mg/dl, resting electrocardiographic results (values 0,1,2), maximum heart rate achieved, exercise induced angina, oldpeak = ST depression induced by exercise relative to rest, the slope of the peak exercise ST segment, number of major vessels (0-3) colored by flourosopy, thal: 0 = normal; 1 = fixed defect; 2 = reversable defect.<br>
                                     <strong>    • Data Preprocessing: </strong> StandardScaler for feature scaling.<br>
@@ -592,19 +605,27 @@
 
                                 <br> <strong>    3.  Parkinson's Disease Prediction Model   </strong> <br>
                                 This model predicts the presence of Parkinson's disease using voice-related features and employs an SVM classifier with a linear kernel.<br>
-                                   <br> <strong>    • Key Features: </strong> <br>
-                                    <strong>    • Algorithm:  </strong> SVM with a linear kernel.<br>
-                                    <strong>• Input Features:</strong> minimum vocal fundamental frequency, acoustic measures from voice recordings, Average vocal fundamental frequency, maximum vocal fundamental frequency, minimum vocal fundamental frequency,  such as jitter and shimmer, Two measures of the ratio of noise to tonal components in the voice, Two nonlinear dynamical complexity measures, DFA - Signal fractal scaling exponent and spread1,spread2,PPE - Three nonlinear measures of fundamental frequency variation. <br>
-                                    <strong>    • Data Preprocessing: </strong> StandardScaler for feature scaling.<br>
-                                    <strong>    • Performance: </strong> Training accuracy of 88.41% and testing accuracy of 87.17%.<br>
+                                   <br> <strong>• Key Features: </strong> <br>
+                                    <strong>    • Algorithm:  </strong><br>
+				    SVM with a linear kernel.<br>
+                                    <strong>    • Input Features:</strong><br>
+				    minimum vocal fundamental frequency, acoustic measures from voice recordings, Average vocal fundamental frequency, maximum vocal fundamental frequency, minimum vocal fundamental frequency,  such as jitter and shimmer, Two measures of the ratio of noise to tonal components in the voice, Two nonlinear dynamical complexity measures, DFA - Signal fractal scaling exponent and spread1,spread2,PPE - Three nonlinear measures of fundamental frequency variation. <br>
+                                    <strong>    • Data Preprocessing: </strong><br>
+				    StandardScaler for feature scaling.<br>
+                                    <strong>    • Performance: </strong><br>
+				    Training accuracy of 88.41% and testing accuracy of 87.17%.<br>
 
                                 <br> <strong>    4.  Breast Cancer Prediction Model  </strong> <br>
                                 This model predicts breast cancer diagnosis using logistic regression based on features extracted from biopsy samples.<br>
-                                   <br> <strong>    • Key Features: </strong> <br>
-                                    <strong>    • Algorithm:  </strong> Logistic regression.<br>
-                                    <strong>    • Input Features:   </strong>   Attributes from biopsy samples, such as mean radius of lobes, mean of surface texture, outer perimeter of lobes, mean area of lobes, mean of smoothness level, mean of compactness, mean of concavity, mean of cocave points  .<br>
-                                    <strong>    • Data Preprocessing: </strong> StandardScaler for feature scaling.<br>
-                                    <strong>    • Performance: </strong> Training accuracy of 98.90% and testing accuracy of 97.36%.<br>
+                                   <br> <strong>• Key Features: </strong> <br>
+                                    <strong>    • Algorithm:  </strong><br>
+				    Logistic regression.<br>
+                                    <strong>    • Input Features:   </strong> <br>
+				    Attributes from biopsy samples, such as mean radius of lobes, mean of surface texture, outer perimeter of lobes, mean area of lobes, mean of smoothness level, mean of compactness, mean of concavity, mean of cocave points  .<br>
+                                    <strong>    • Data Preprocessing: </strong><br>
+				    StandardScaler for feature scaling.<br>
+                                    <strong>    • Performance: </strong> <br>
+				    Training accuracy of 98.90% and testing accuracy of 97.36%.<br>
                             </span>
                         </p>
                         <video controls class="project-video" style="margin-top: 20px;">
@@ -643,20 +664,29 @@
 
                             <br> <strong style="font-size: 1.2em; margin-bottom: 10px; display: inline-block;">01. Key Features</strong><br>
                             <span style="line-height: 1;">
-                                <strong>• Chat Interface: </strong>  Engage in interactive conversations with the gemini-pro model through Streamlit's intuitive chat interface.<br>
-                                <strong>• Image Captioning: </strong> Generate captions for uploaded images using the gemini-pro-vision model, extracting visual insights.<br>
-                                <strong>• Text Embedding:  </strong>  Obtain numerical representations (embeddings) for input text, aiding in tasks like document similarity search.<br>
-                                <strong>• Open-Ended Question Answering:  </strong> Pose questions to the gemini-pro model and receive comprehensive responses, fostering knowledge exploration.<br>
+                                <strong>• Chat Interface: </strong><br>
+				    Engage in interactive conversations with the gemini-pro model through Streamlit's intuitive chat interface.<br>
+                                <strong>• Image Captioning: </strong><br>
+				    Generate captions for uploaded images using the gemini-pro-vision model, extracting visual insights.<br>
+                                <strong>• Text Embedding:  </strong><br>
+				    Obtain numerical representations (embeddings) for input text, aiding in tasks like document similarity search.<br>
+                                <strong>• Open-Ended Question Answering:  </strong><br>
+				    Pose questions to the gemini-pro model and receive comprehensive responses, fostering knowledge exploration.<br>
 
 
                            <br> <strong style="font-size: 1.2em; margin-bottom: 0; display: inline-block;">02. Functionality and Usage   </strong> <br>
 
                                <br> <strong> How It Works </strong> <br>
-                                <strong>    • Multiple Responses:  </strong>  -Navigate multiple responses for more dynamic interaction using 'Next' and 'Previous' buttons.<br>	   
-                                <strong>    • Image Captioning: </strong> Provides short and detailed titles for uploaded images through a visual interface.<br>
-                                <strong>    • Chat Interface: </strong> Engage with the chatbot for various queries.<br>
-                                <strong>    • Text Embedding: </strong> Input text to receive embeddings, enhancing text analysis capabilities.<br>
-                                <strong>    • Open-Ended Questioning and Answering:  </strong> Ask any question and get insightful responses.<br>
+                                <strong>    • Multiple Responses:  </strong><br>
+				    Navigate multiple responses for more dynamic interaction using 'Next' and 'Previous' buttons.<br>	   
+                                <strong>    • Image Captioning: </strong><br>
+				    Provides short and detailed titles for uploaded images through a visual interface.<br>
+                                <strong>    • Chat Interface: </strong><br>
+				    Engage with the chatbot for various queries.<br>
+                                <strong>    • Text Embedding: </strong><br>
+				    Input text to receive embeddings, enhancing text analysis capabilities.<br>
+                                <strong>    • Open-Ended Questioning and Answering:  </strong><br>
+				    Ask any question and get insightful responses.<br>
 
                                 <!-- <br> <strong> 2.  Usage </strong> <br>
                                 <strong>    • Input Health Parameters:  </strong>  Users can input their health data through the web interface.<br>
